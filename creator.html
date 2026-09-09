@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>プロフィール - DMM FANZA Creators</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html"><span><span class="dmm">DMM</span> <span class="fanza">FANZA</span> <span class="cr">Creators</span><small>好きなクリエイターを、もっと身近に。</small></span></a>
+    <nav class="nav-desktop">
+      <a href="search.html">クリエイターを探す</a>
+      <a href="ranking.html">ランキング</a>
+      <a href="beginners.html">はじめての方へ</a>
+    </nav>
+    <button class="btn btn-login" data-open-login>ログイン</button>
+    <button class="hamburger" data-open-drawer aria-label="メニュー">☰</button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer">
+  <div class="drawer-bg" data-close-drawer></div>
+  <nav class="drawer-panel">
+    <a href="index.html">ホーム</a>
+    <a href="search.html">クリエイターを探す</a>
+    <a href="ranking.html">ランキング</a>
+    <a href="favorites.html">お気に入り</a>
+    <a href="beginners.html">はじめての方へ</a>
+    <a href="#" data-open-login>ログイン</a>
+  </nav>
+</div>
+
+<main id="creatorRoot">
+  <div class="wrap" style="padding-top:14px;font-size:13px;color:var(--muted)">
+    <a href="index.html">ホーム</a> ＞ <a href="search.html">クリエイターを探す</a> ＞ <span id="crumbName"></span>
+  </div>
+
+  <section class="cov" style="margin-top:10px">
+    <div class="cov-inner">
+      <div class="cov-photo" id="covPhoto"></div>
+      <div>
+        <h1 id="cName"></h1>
+        <div class="kana" id="cKana"></div>
+        <div class="tags" id="cTags" style="margin-top:8px"></div>
+        <p class="desc" id="cDesc"></p>
+        <div class="cov-stats">
+          <div><b id="cFollowers"></b><span>👤 フォロワー数</span></div>
+          <div><b id="cFavs"></b><span>♡ お気に入り数</span></div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;min-width:230px">
+        <button class="btn btn-outline" id="cFavBtn" data-fav-btn="">♡ お気に入り</button>
+        <a class="btn btn-primary" data-aff href="https://example.com/affiliate">FANZAの公式ページを見る ⧉</a>
+        <small style="font-size:11px;color:var(--muted)">※ このボタンからDMM FANZAの公式ページへ移動します。</small>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <nav class="detail-tabs">
+      <a href="#top" class="on">トップ</a>
+      <a href="#profile">プロフィール</a>
+      <a href="#works">人気コンテンツ</a>
+      <a href="#points">おすすめポイント</a>
+      <a href="#faq">よくある質問</a>
+    </nav>
+
+    <h2 class="section-title" id="profile"><span class="bar">👤 プロフィール</span></h2>
+    <div class="profile-grid">
+      <table class="profile-table">
+        <tr><th>名前</th><td id="cProfileName"></td></tr>
+        <tr><th>ジャンル</th><td id="cProfileGenre"></td></tr>
+        <tr><th>活動開始</th><td id="cProfileDebut"></td></tr>
+        <tr><th>誕生日</th><td id="cBirth"></td></tr>
+        <tr><th>出身地</th><td id="cBirthplace"></td></tr>
+        <tr><th>趣味</th><td id="cProfileHobby"></td></tr>
+        <tr><th>SNS</th><td>𝕏　📷　▶</td></tr>
+      </table>
+      <div class="msg-box" id="cMessage"></div>
+    </div>
+
+    <h2 class="section-title" id="works"><span class="bar">👑 人気コンテンツ</span><a class="more-link" href="search.html">すべて見る ＞</a></h2>
+    <div class="works-grid" id="cWorks"></div>
+
+    <h2 class="section-title" id="points"><span class="bar">✨ おすすめポイント</span></h2>
+    <div class="points-grid" id="cPoints"></div>
+
+    <h2 class="section-title" id="faq"><span class="bar">💬 よくある質問</span><a class="more-link" href="beginners.html">すべて見る ＞</a></h2>
+    <div id="cFaqs" style="margin-bottom:30px"></div>
+
+    <h2 class="section-title"><span class="bar">👥 関連クリエイター</span><a class="more-link" href="search.html">すべて見る ＞</a></h2>
+    <div class="card-row mobile-scroll" id="cRelated" style="grid-template-columns:repeat(4,1fr)"></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a class="logo" href="index.html" style="font-size:16px"><span><span class="dmm">DMM</span> <span class="fanza">FANZA</span> <span class="cr">Creators</span></span></a>
+    <nav class="footer-links">
+      <a href="beginners.html">当サイトについて</a>
+      <a href="beginners.html">免責事項</a>
+      <a href="beginners.html">プライバシーポリシー</a>
+      <a href="beginners.html">お問い合わせ</a>
+    </nav>
+    <div class="sns"><a href="#" aria-label="X">𝕏</a><a href="#" aria-label="YouTube">▶</a></div>
+    <p class="footer-note">当サイトはDMM FANZAのアフィリエイトプログラムを利用しています。（デモサイト／掲載データはサンプルです）</p>
+  </div>
+</footer>
+
+<nav class="bottom-nav">
+  <a href="index.html"><span class="bi">🏠</span>ホーム</a>
+  <a href="search.html"><span class="bi">🔍</span>探す</a>
+  <a href="favorites.html"><span class="bi">♡</span><span data-fav-count>お気に入り</span></a>
+  <a href="ranking.html"><span class="bi">👑</span>ランキング</a>
+  <a href="#" data-open-login><span class="bi">👤</span>マイページ</a>
+</nav>
+
+<div class="modal" id="loginModal">
+  <div class="modal-bg" data-close-login></div>
+  <div class="modal-panel">
+    <button class="modal-close" data-close-login>×</button>
+    <h2>ログイン</h2>
+    <p>DMMアカウントでログインできます。（デモのため実際には送信されません）</p>
+    <form id="loginForm">
+      <input type="email" placeholder="メールアドレス" required>
+      <input type="password" placeholder="パスワード" required>
+      <button class="btn btn-primary btn-block" type="submit" style="margin-top:10px">ログイン</button>
+    </form>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

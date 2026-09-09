@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DMM FANZA Creators｜好きなクリエイターを、もっと身近に。</title>
+<meta name="description" content="DMM FANZAで活躍するクリエイターを紹介するアフィリエイトメディア。気になるクリエイターを見つけて、公式ページへスムーズにアクセスできます。">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html"><span><span class="dmm">DMM</span> <span class="fanza">FANZA</span> <span class="cr">Creators</span><small>好きなクリエイターを、もっと身近に。</small></span></a>
+    <nav class="nav-desktop">
+      <a href="search.html">クリエイターを探す</a>
+      <a href="ranking.html">ランキング</a>
+      <a href="beginners.html">はじめての方へ</a>
+    </nav>
+    <button class="icon-btn header-search" data-open-drawer aria-label="メニュー" style="display:none">🔍</button>
+    <button class="btn btn-login" data-open-login style="margin-left:auto">ログイン</button>
+    <button class="hamburger" data-open-drawer aria-label="メニュー">☰</button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer">
+  <div class="drawer-bg" data-close-drawer></div>
+  <nav class="drawer-panel">
+    <a href="index.html">ホーム</a>
+    <a href="search.html">クリエイターを探す</a>
+    <a href="ranking.html">ランキング</a>
+    <a href="favorites.html">お気に入り</a>
+    <a href="beginners.html">はじめての方へ</a>
+    <a href="#" data-open-login>ログイン</a>
+  </nav>
+</div>
+
+<main>
+  <!-- hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <p class="hero-eyebrow">＼ DMM FANZA Creators ／</p>
+        <h1>好きなクリエイターと<br><span class="pink">もっとつながる。</span></h1>
+        <p>このサイトは、DMM FANZAで活躍するクリエイターを紹介するアフィリエイトメディアです。気になるクリエイターを見つけて、公式ページへスムーズにアクセスできます。</p>
+        <form class="search-bar" data-search-form>
+          <span class="s-icon">🔍</span>
+          <input type="text" placeholder="クリエイター名・ジャンルで検索" aria-label="クリエイター検索">
+          <button type="submit">検索</button>
+        </form>
+        <div class="keywords">
+          <span class="label">人気のキーワード</span>
+          <a class="chip" href="search.html?genre=女優">女優</a>
+          <a class="chip" href="search.html?genre=コスプレ">コスプレ</a>
+          <a class="chip" href="search.html?genre=AV女優">AV女優</a>
+          <a class="chip" href="search.html?genre=配信者">配信者</a>
+          <a class="chip" href="search.html?genre=新人">新人</a>
+          <a class="chip" href="search.html?genre=グラビア">グラビア</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="ph"><span style="font-size:64px">♡</span>images/hero.jpg を配置すると<br>ここにメインビジュアルが表示されます</div>
+        <img src="images/hero.jpg" alt="メインビジュアル" onerror="this.remove()">
+        <span class="handwrite" style="top:18px;left:14px">推しに<br>出会える、<br>ここから。♡</span>
+        <span class="handwrite" style="bottom:12px;right:14px;transform:rotate(-12deg)">Find your<br>favorite ♡</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- trio -->
+  <section class="section" style="padding-top:24px">
+    <div class="wrap">
+      <div class="trio">
+        <div><span class="t-ico">💗</span><div><b>お気に入りの<br>クリエイターを見つける</b><span>気になるあの子の活動をチェック</span></div></div>
+        <div><span class="t-ico">🔗</span><div><b>公式ページに簡単アクセス</b><span>DMM FANZAの公式ページへスムーズに移動</span></div></div>
+        <div><span class="t-ico">👑</span><div><b>人気ランキングで話題のクリエイターを発見</b><span>今注目のクリエイターがすぐわかる</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- recommend -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <h2 class="section-title"><span class="bar">おすすめクリエイター</span><a class="more-link" href="ranking.html">すべて見る ＞</a></h2>
+      <div class="card-row mobile-scroll" id="homeRecommend"></div>
+    </div>
+  </section>
+
+  <!-- beginners banner -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="cta-banner">
+        <span class="c-ico">📝</span>
+        <div><span style="color:var(--pink);font-weight:800;font-size:13px">はじめての方へ</span><b class="big">DMM FANZAのクリエイターとは？</b><span style="font-size:13px;color:#555">このサイトの使い方や楽しみ方をわかりやすく解説します。</span></div>
+        <a class="btn btn-primary" href="beginners.html">詳しく見る ＞</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a class="logo" href="index.html" style="font-size:16px"><span><span class="dmm">DMM</span> <span class="fanza">FANZA</span> <span class="cr">Creators</span></span></a>
+    <nav class="footer-links">
+      <a href="beginners.html">当サイトについて</a>
+      <a href="beginners.html">免責事項</a>
+      <a href="beginners.html">プライバシーポリシー</a>
+      <a href="beginners.html">お問い合わせ</a>
+    </nav>
+    <div class="sns"><a href="#" aria-label="X">𝕏</a><a href="#" aria-label="YouTube">▶</a></div>
+    <p class="footer-note">当サイトはDMM FANZAのアフィリエイトプログラムを利用しています。（デモサイト／掲載データはサンプルです）</p>
+  </div>
+</footer>
+
+<nav class="bottom-nav">
+  <a href="index.html" class="on"><span class="bi">🏠</span>ホーム</a>
+  <a href="search.html"><span class="bi">🔍</span>検索</a>
+  <a href="ranking.html"><span class="bi">👑</span>ランキング</a>
+  <a href="favorites.html"><span class="bi">♡</span><span data-fav-count>お気に入り</span></a>
+  <a href="#" data-open-login><span class="bi">👤</span>マイページ</a>
+</nav>
+
+<div class="modal" id="loginModal">
+  <div class="modal-bg" data-close-login></div>
+  <div class="modal-panel">
+    <button class="modal-close" data-close-login>×</button>
+    <h2>ログイン</h2>
+    <p>DMMアカウントでログインすると、お気に入りやフォロー機能が使えます。（デモのため実際には送信されません）</p>
+    <form id="loginForm">
+      <input type="email" placeholder="メールアドレス" required>
+      <input type="password" placeholder="パスワード" required>
+      <button class="btn btn-primary btn-block" type="submit" style="margin-top:10px">ログイン</button>
+    </form>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

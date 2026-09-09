@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>お気に入り - DMM FANZA Creators</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html"><span><span class="dmm">DMM</span> <span class="fanza">FANZA</span> <span class="cr">Creators</span><small>好きなクリエイターを、もっと身近に。</small></span></a>
+    <nav class="nav-desktop">
+      <a href="search.html">クリエイターを探す</a>
+      <a href="ranking.html">ランキング</a>
+      <a href="beginners.html">はじめての方へ</a>
+    </nav>
+    <button class="btn btn-login" data-open-login>ログイン</button>
+    <button class="hamburger" data-open-drawer aria-label="メニュー">☰</button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer">
+  <div class="drawer-bg" data-close-drawer></div>
+  <nav class="drawer-panel">
+    <a href="index.html">ホーム</a>
+    <a href="search.html">クリエイターを探す</a>
+    <a href="ranking.html">ランキング</a>
+    <a href="favorites.html">お気に入り</a>
+    <a href="beginners.html">はじめての方へ</a>
+    <a href="#" data-open-login>ログイン</a>
+  </nav>
+</div>
+
+<main>
+  <section class="section">
+    <div class="wrap">
+      <h1 style="font-size:26px;margin:0 0 4px">♡ お気に入り</h1>
+      <p style="color:var(--muted);font-size:13px;margin:0 0 18px">登録したクリエイターはこのブラウザに保存されます。</p>
+      <div class="result-head">
+        <b id="favCount"><span>0</span> 件</b>
+      </div>
+      <div class="result-grid" id="favGrid"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a class="logo" href="index.html" style="font-size:16px"><span><span class="dmm">DMM</span> <span class="fanza">FANZA</span> <span class="cr">Creators</span></span></a>
+    <nav class="footer-links">
+      <a href="beginners.html">当サイトについて</a>
+      <a href="beginners.html">免責事項</a>
+      <a href="beginners.html">プライバシーポリシー</a>
+      <a href="beginners.html">お問い合わせ</a>
+    </nav>
+    <div class="sns"><a href="#" aria-label="X">𝕏</a><a href="#" aria-label="YouTube">▶</a></div>
+    <p class="footer-note">当サイトはDMM FANZAのアフィリエイトプログラムを利用しています。（デモサイト／掲載データはサンプルです）</p>
+  </div>
+</footer>
+
+<nav class="bottom-nav">
+  <a href="index.html"><span class="bi">🏠</span>ホーム</a>
+  <a href="search.html"><span class="bi">🔍</span>探す</a>
+  <a href="ranking.html"><span class="bi">👑</span>ランキング</a>
+  <a href="favorites.html" class="on"><span class="bi">♥</span><span data-fav-count>お気に入り</span></a>
+  <a href="#" data-open-login><span class="bi">👤</span>マイページ</a>
+</nav>
+
+<div class="modal" id="loginModal">
+  <div class="modal-bg" data-close-login></div>
+  <div class="modal-panel">
+    <button class="modal-close" data-close-login>×</button>
+    <h2>ログイン</h2>
+    <p>DMMアカウントでログインできます。（デモのため実際には送信されません）</p>
+    <form id="loginForm">
+      <input type="email" placeholder="メールアドレス" required>
+      <input type="password" placeholder="パスワード" required>
+      <button class="btn btn-primary btn-block" type="submit" style="margin-top:10px">ログイン</button>
+    </form>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
